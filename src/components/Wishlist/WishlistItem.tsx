@@ -69,12 +69,12 @@ export const WishlistItem = ({ item }: WishlistItemProps) => {
             color="brand.primary"
             title="Add to Cart"
             className="snipcart-add-item"
-            data-item-id={product.id}
-            data-item-price={product.price}
-            data-item-description={product.description}
-            data-item-image={product.mainImage}
-            data-item-name={product.name}
-            data-item-url={`/products/${product.slug}`}
+            data-item-id={item.id}
+            data-item-price={item.price}
+            data-item-description={item.description}
+            data-item-image={item.mainImage}
+            data-item-name={item.name}
+            data-item-url={`/products/${item.slug}`}
 
             // onClick={() => addItem('cart', item)}
           >
