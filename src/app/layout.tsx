@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    window.SnipcartSettings = {
+    (window as any).SnipcartSettings = {
       publicApiKey: process.env.NEXT_PUBLIC_SNIPCART_API_KEY,
       loadStrategy: "on-user-interaction",
       modalStyle: "side",
