@@ -1,6 +1,5 @@
 "use client";
 import Script from "next/script";
-import { snipcart_api_key } from "@utils/env_variables";
 import { useEffect } from "react";
 export default function RootLayout({
   children,
