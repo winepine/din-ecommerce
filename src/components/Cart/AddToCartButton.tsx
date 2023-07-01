@@ -10,7 +10,6 @@ interface IAddToCartButtonProps {
 }
 export const AddToCartButton = ({ product, count }: IAddToCartButtonProps) => {
   const { addItem, removeItem, isAdded } = useContext(AppContext);
-  console.log({ product });
   return (
     <>
       {isAdded("cart", product.id) ? (
